@@ -7,7 +7,6 @@ console.log(n);
 var randomDiceImage = "images/dice" + n + ".png";
 document.querySelector(".img1").setAttribute("src",randomDiceImage);
 
-
 var randomNumber2 = Math.random();
 randomNumber2 = randomNumber2* 6;
 n1 = Math.floor(randomNumber2) + 1;
@@ -23,6 +22,7 @@ else if (randomNumber2 > randomNumber1) {
 }
 else {
   document.querySelector("h1").innerHTML = "Draw!";
-} 
+}
 }
 document.querySelector(".today").addEventListener("click", rollDice);
+
